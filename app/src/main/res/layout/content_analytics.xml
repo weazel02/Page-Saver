@@ -1,0 +1,224 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="kled.pagesaver.AnalyticsActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v7.widget.CardView
+
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_colors"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation ="5dp"
+            >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/analytics_title" >
+        </TextView>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_long"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="250dp"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation ="5dp"
+            >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="@string/analytics_duration_title" >
+        </TextView>
+
+        <lecho.lib.hellocharts.view.ColumnChartView
+            android:id="@+id/duration_chart"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="60dp"/>
+
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_numpages"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="250dp"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation ="5dp"
+            >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="@string/analytics_pages_title" >
+        </TextView>
+
+        <lecho.lib.hellocharts.view.ColumnChartView
+            android:id="@+id/pages_chart"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="60dp"/>
+
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_pagemonths"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="250dp"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation ="5dp"
+            >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="@string/analytics_pages_month_title" >
+        </TextView>
+
+        <lecho.lib.hellocharts.view.ColumnChartView
+            android:id="@+id/monthly_pages_chart"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="60dp"/>
+
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_time"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="250dp"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation ="5dp"
+            >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="@string/analytics_time_title" >
+        </TextView>
+
+        <lecho.lib.hellocharts.view.ColumnChartView
+            android:id="@+id/time_chart"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="60dp"/>
+
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_days"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="250dp"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation ="5dp"
+            android:layout_marginBottom="30dp"
+            >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="@string/analytics_month_title" >
+        </TextView>
+
+        <lecho.lib.hellocharts.view.ColumnChartView
+            android:id="@+id/month_chart"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="60dp"
+           />
+
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+</ScrollView>

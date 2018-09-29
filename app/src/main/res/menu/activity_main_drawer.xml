@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_analytics"
+            android:icon="@drawable/ic_analytics"
+            android:title="Analytics" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_map"
+            android:title="MapView" />
+        <item
+            android:id="@+id/nav_goal_tracker"
+            android:icon="@drawable/ic_goals"
+            android:title="Goal Tracker" />
+    </group>
+
+</menu>

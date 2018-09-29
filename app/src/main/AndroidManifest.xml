@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kled.pagesaver">
+
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="kled.pagesaver.gcm.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="kled.pagesaver.gcm.permission.C2D_MESSAGE" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+
+        <provider android:authorities="com.facebook.app.FacebookContentProvider520311618139530"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"/>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AnalyticsActivity"
+            android:label="@string/title_activity_analytics"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CompareAnalyticsActivity"
+            android:label="@string/title_activity_compare_analytics"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GoalsActivity"
+            android:label="@string/title_activity_goals"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddBookActivity"
+            android:label="Add"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ViewCurrentBookActivity"
+            android:label="View"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ViewPastBookActivity"
+            android:label="View"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EditBookActivity"
+            android:label="Edit"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MarkCompleteActivity" />
+        <activity
+            android:name=".ViewGoalActivity"
+            android:label="@string/title_activity_view_goal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddGoalActivity"
+            android:label="@string/title_activity_add_goal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GoalsReminderActivity"
+            android:label="Goals Reminder" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity
+            android:name=".PSMapActivity"
+            android:label="@string/title_activity_psmap" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name">
+
+        </activity>
+
+        <receiver android:name="kled.pagesaver.GoalAlarmReceiver">
+        </receiver>
+
+        <service
+            android:name=".MyTrackingService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name="kled.pagesaver.GcmReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="kled.pagesaver" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".GcmIntentService" />
+    </application>
+
+</manifest>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_view_goal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="kled.pagesaver.AddGoalActivity"
+    tools:showIn="@layout/activity_add_goal">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:text="@string/goals_book_title" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/add_goals_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:text="@string/goals_description" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/add_goals_description_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:inputType="textCapSentences|textMultiLine">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:text= "@string/goals_total_pages">
+        </TextView>
+
+        <EditText
+            android:id="@+id/add_goals_total_goal_text"
+            android:layout_width="50dp"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:text=" Pages already read: " >
+        </TextView>
+
+        <EditText
+            android:id="@+id/add_goals_progress_text"
+            android:layout_width="50dp"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:text="@string/goals_increment_text" >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/set_goals_instruction" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/add_goals_increment_text"
+                android:layout_width="50dp"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text=" pages per day " >
+            </TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/goals_end_time" >
+        </TextView>
+
+        <DatePicker
+            android:id="@+id/add_goals_date_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </DatePicker>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:htext="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.hanks.htextview.HTextView
+        android:id="@+id/text"
+        android:text="PageSaved"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#41CA96"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        />
+
+</LinearLayout>

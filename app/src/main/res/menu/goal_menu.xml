@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/goal_custom_progress"
+        android:title="@string/goals_menu_progress" />
+    <item android:id="@+id/goal_update"
+        android:title="@string/goals_menu_adjust_goal" />
+    <item android:id="@+id/goal_complete"
+        android:title="@string/goals_menu_complete" />
+</menu>

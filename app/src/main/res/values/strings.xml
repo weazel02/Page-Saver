@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">PageSaved</string>
+    <string name="facebook_app_id">520311618139530</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add_book">AddBookActivity</string>
+
+    <string name="speech">Or record your comment here</string>
+    <string name="title_label">Title:</string>
+    <string name="title_hint">Enter book title here</string>
+    <string name="author_label">Author:</string>
+    <string name="author_hint">Enter author name here</string>
+    <string name="genre_label">Genre:</string>
+    <string name="genre_hint">Enter genre here</string>
+    <string name="rating_label">Rating:</string>
+    <string name="comments_label">Comments:</string>
+    <string name="progress_label">Progress:</string>
+    <string name="add_location_label">Add Location</string>
+    <string name="date_started_label">Select Date:</string>
+    <string name="time_started_label">Select Start Time:</string>
+    <string name="duration_label">Duration:</string>
+    <string name="title_activity_view_current_book">ViewCurrentBookActivity</string>
+    <string name="title_activity_past_book_view">PastBookViewActivity</string>
+    <string name="title_activity_edit_book">EditBookActivity</string>
+
+    <!-- Goals -->
+    <string name="title_activity_goals">Goals</string>
+    <string name="goals_title">Current Goals</string>
+    <string name="menu_add_goal">Add</string>
+    <string name="menu_cancel_goal">Cancel</string>
+    <string name="goals_book_title">Book Title</string>
+    <string name="goals_description">Description</string>
+    <string name="goals_total_pages">Total pages:</string>
+    <string name="goals_end_time">End Time:</string>
+    <string name="set_goals_instruction">Either enter your goal manually
+        or select an end date for automatic calculation of pages per day:</string>
+
+    <string name="goals_increment_text">Completion Goal</string>
+    <string name="goals_progress">Progress</string>
+
+    <string name="goals_menu_complete">Complete/delete this goal</string>
+    <string name="goals_menu_adjust_goal">Adjust this goal</string>
+    <string name="goals_menu_progress">Update your progress</string>
+
+    <string name="title_activity_view_goal">View Goal</string>
+    <string name="title_activity_add_goal">Add Goal</string>
+    <string name="title_activity_goal_reminder">Goal Reminder</string>
+
+    <string name="dialog_custom_range_message">Set bookmark: enter page number</string>
+    <string name="dialog_custom_range_title">Input Custom Range:</string>
+    <string name="dialog_goal_update_message">Pages to read per day from now on</string>
+    <string name="dialog_goal_update_title">Input New Goal:</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">CANCEL</string>
+
+    <string name="goal_summary_title">Summary of Goals Today</string>
+    <string name="goal_reminder_notification_title">Goal Tracker</string>
+    <string name="goal_reminder_notification_content">Click to see a summary of reading goals today</string>
+    <string name="goal_reminder_title">Summary of Reading Goals Today</string>
+    <string name="goal_reminder_menu_stop">Stop showing goal reminder</string>
+
+    <!-- Analytics -->
+    <string name="title_activity_analytics">Analytics</string>
+    <string name="analytics_title">Reading Analytics</string>
+    <string name="analytics_time_title">Time of Day When You Read</string>
+    <string name="analytics_month_title">How Many Days You Read Per Month</string>
+    <string name="analytics_duration_title">How Long You Read Per Session</string>
+    <string name="analytics_pages_title">How Many Pages Read Per Session</string>
+    <string name="analytics_pages_month_title">How Many Pages Read Per Month</string>
+    <string name="title_activity_psmap">Map</string>
+    <string name="analytics_compare">Compare With All Users</string>
+
+    <string-array name="genre_array">
+        <item>Fiction</item>
+        <item>Non-Fiction</item>
+        <item>Comedy</item>
+        <item>Action</item>
+        <item>Drama</item>
+        <item>Romance</item>
+        <item>Mystery</item>
+        <item>Horror</item>
+        <item>Self Help</item>
+        <item>Health</item>
+        <item>Travel</item>
+        <item>Children</item>
+        <item>Food</item>
+        <item>Biography</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- Universe Analytics-->
+    <string name="title_activity_compare_analytics">Compare Your Trends with All Users</string>
+    <string name="analytics_title_universe">Blue = Everyone; Purple = You</string>
+    <string name="analytics_time_title_universe">Time of Day</string>
+    <string name="analytics_month_title_universe">Month by Number of Entries</string>
+    <string name="analytics_duration_title_universe">Duration of Each Reading Session</string>
+    <string name="analytics_pages_title_universe">Pages Read Per Reading Session</string>
+    <string name="analytics_pages_month_title_universe">Months by Number of Pages</string>
+
+</resources>

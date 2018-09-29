@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/search_error_textbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="There aren't any entries"
+        android:visibility="gone"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/search_lv">
+
+    </ListView>
+</LinearLayout>
